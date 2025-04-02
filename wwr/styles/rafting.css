@@ -101,24 +101,42 @@
     margin-left: 10px;
   }
 
-  section {
+  .history {
+    display: grid;
+    grid-template-rows: 1fr 200px 1fr;
+    gap: 20px;
+    align-items: center;
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
   }
-  
-  section h2 {
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-  }
-  
-  .adventure-images img {
-    width: 100px;
-    margin: 5px;
-    border-radius: 5px;
+
+  .history img {
+    width: 100%;
+    border-radius: 10px;
   }
 
+  .adventure {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.adventure figure {
+    text-align: center;
+}
+
+.adventure img {
+    width: 150px;
+    border-radius: 5px;
+}
+
   footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: var(--primary-color);
     color: white;
     text-align: center;
@@ -133,6 +151,11 @@
     text-decoration: none;
   }
   
+footer .sociallinks {
+  display: flex;
+  gap: 10px;
+}
+
   footer img {
     width: 30px;
     margin: 0 10px;
