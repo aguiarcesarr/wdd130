@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description" content="Contact White Water Rafting - Find our address, phone number, or send us a message directly.">
+    <meta name="author" content="Cesar Aguiar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo2.png" alt="Site Logo">
+        <div class="header-center">
+            <p class="tagline">“Catch the Wave, Live the Thrill”</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<main>
+<section class="contact_info">
+    <div class="contact-details">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong>Unnamed Road, Pederneiras - SP</p>
+        <p><strong>Phone:</strong> 11 1234-5678</p>
+        <p><strong>Email:</strong> info@whitewaterafting.com</p>
+    </div>
+    <div class="map">
+        <h3>Find Us Here</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17552.429328803646!2d-48.72478757625838!3d-22.355753620058024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7551298b9af4b%3A0xdacb85e5cd1099bc!2sLouis%20Dreyfus%20Company!5e0!3m2!1ses-419!2sbr!4v1743818751644!5m2!1ses-419!2sbr"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+            style="width: 100%; height: 300px; border: 0;">
+        </iframe>
+    </div>
+</section>
+
+<section class="employee_profiles">
+    <h2>Meet Our Team</h2>
+    <div class="profiles_grid">
+        <figure>
+            <img src="images/guide.png" alt="River Guide Ryan">
+            <figcaption>Ryan - River Guide</figcaption>
+        </figure>
+        <figure>
+            <img src="images/reservation.png" alt="Resevertion Specialist Julia">
+            <figcaption>Julia - Reservation Specialist</figcaption>
+        </figure>
+        <figure>
+            <img src="images/safety.png" alt="Safety Instructor Marco">
+            <figcaption>Marco - Safety Instructor</figcaption>
+        </figure>
+    </div>
+</section>
+
+<section class="contact_form">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>What is the purpose of your message?</p>
+        <label>
+            <input type="radio" name="purpose" value="general" required>
+            General Inquiry
+        </label>
+        <label>
+            <input type="radio" name="purpose" value="reservation" required>
+            Reservation Inquiry
+        </label>
+        <label>
+            <input type="radio" name="purpose" value="suggestion" required>
+            Website Suggestion
+        </label>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <label>
+            <input type="checkbox" name="subscribe">
+            Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</main>
+<footer>
+    <p>©2025 - Whitewater Rafting - Cesar Aguiar</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+        <img src="images/f2.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com"> <img src="images/T2.png" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+        <img src="images/I2.png" alt="Instagram">
+        </a>
+    </nav>
+</footer>
+</body>
+</html>
