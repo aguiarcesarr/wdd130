@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #bc9048;
-    --secondary-color: #cad8b7;
-    --accent1-color: #496767;
-    --accent2-color: #bcad89;
-  
-    --heading-font: 'Roboto', sans-serif;
-    --text-font: 'Manrope', sans-serif;
-  }
+  --primary-color: #1a3563;
+  --secondary-color: #DADDE7;
+  --accent1-color: #2C1320;
+  --accent2-color: #5F4B66;
+
+  --heading-font: 'Caveat', cursive;
+  --text-font: 'Source Code Pro', monospace;
+}
   
   * {
     margin: 0;
@@ -31,11 +31,11 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #c2912f;
+  background-color: #1a3563;
 }
 
 header img {
-  height: 75px;
+  height: 100px;
   width: auto;
   mix-blend-mode: multiply;
   object-fit: contain;
@@ -77,15 +77,13 @@ nav a:hover {
     position: relative;
     width: 100%;
     height: 400px;
-    overflow: hidden;
+    background-image: url('../images/ai.png.webp'); /* Replace with the correct path to your image */
+    background-size: cover; /* Cover the entire hero section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+
   }
   
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
 
 .hero h1 {
     position: absolute;
@@ -169,6 +167,8 @@ footer p {
   
 footer a {
     text-decoration: none;
+    color: white;
+    text-align: center;
   }
   
 footer .sociallinks {
@@ -316,6 +316,280 @@ footer .sociallinks {
   border-radius: 10px;
   overflow: hidden;
 }
+
+/*Trips Page*/
+.about-main {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro {
+  margin-bottom: 3rem;
+}
+
+.about-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005fa3;
+}
+
+.highlight-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.highlight-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 300px;
+  height: 400px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideIn 0.8s forwards;
+  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+.highlight-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.highlight-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.highlight-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.highlight-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.other-trips {
+  padding: 60px 20px;
+  background-color: #f2f9ff;
+  text-align: center;
+}
+
+.other-trips h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #004e7c;
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.trip-card:hover img {
+  transform: scale(1.05);
+}
+
+.trip-card h3 {
+  margin: 15px 0 10px;
+  color: #003d61;
+}
+
+.trip-card p {
+  padding: 0 15px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.trip-button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-button:hover {
+  background-color: #005fa3;
+  box-shadow: 0 0 10px #0077cc;
+}
+
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/raf.webp'); /* Confirm this path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  color: white;
+  padding: 2rem 3rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  max-width: 90%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+/* Call to Action */
+.cta {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: #0077b6;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #caf0f8;
+}
+
+/* Newsletter Signup */
+.newsletter {
+  background-color: #f1f1f1;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1.5rem;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #023e8a;
+}
+
+/* Grid Info Section */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
 
 /*Mobile Stack*/
 
